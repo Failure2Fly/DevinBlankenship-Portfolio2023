@@ -45,6 +45,9 @@ body{
   -moz-background-size:cover;
   min-height:100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills{
