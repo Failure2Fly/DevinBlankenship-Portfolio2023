@@ -1,7 +1,13 @@
 body{
   max-width:100vw;
   color:#fff;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
+/* .section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+} */
 #landing{
   min-height:100vh;
   background:url(https://maas.museum/app/uploads/2016/05/astronaut-outer-space-moon-nasa-astronauts-free-208100-2500x1667.jpg)no-repeat center center;
@@ -36,6 +42,7 @@ body{
   -moz-background-size:cover;
   min-height:100vh;
   position: relative;
+  padding-bottom: 6rem;
 }
 #contact{
   background:url(https://images.unsplash.com/photo-1578592325919-ca966e981cb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80) no-repeat center center;
@@ -190,8 +197,8 @@ iframe{
 .portfolio_titles{
   text-align: center; 
   font-size: 50px; 
-  border-bottom: solid 2px white;
-  margin: 80px 350px 10px 350px;
+  margin: 0;
+  padding: 80px 0px 10px;
 }
 
 
