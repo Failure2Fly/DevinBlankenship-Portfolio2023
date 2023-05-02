@@ -4,10 +4,10 @@ body{
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
-/* .section {
+.section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-} */
+}
 #landing{
   min-height:100vh;
   background:url(https://maas.museum/app/uploads/2016/05/astronaut-outer-space-moon-nasa-astronauts-free-208100-2500x1667.jpg)no-repeat center center;
