@@ -1,19 +1,20 @@
-// For Switching between menus
 $(document).ready(function(){
-  $('#jump').smoothScroll({speed:1500});
+
+  var hero = document.getElementById("landing");
+  var heroHeight = hero.offsetHeight;
+  $('#navbar').css({"top":heroHeight});
+
+  var sticky = navbar.offsetTop;
+
+  $(window).scroll(function(){
   
-  $("button").click(function(){
-    var target = $(this).attr("href");
-    $(".content").not(target).hide();
-    $(target).show("slow");
+    if (window.pageYOffset >= sticky) {
+      $('#navbar').addClass("sticky");
+    } 
+    else {
+      $('#navbar').removeClass("sticky");
+    }
+  
   });
-  
-  var cw = $('.project').width();
-  $('.project').css({'height':cw+'px'});
-  
-  $("#first").click();
-  
+
 });
-
-
-

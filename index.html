@@ -4,26 +4,25 @@
     <title>Devins Front-End Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/js" href="js/global.js" />
-    <link rel="stylesheet" type="text/js" href="js/contact.js" />
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
     <link rel="stylesheet" type="text/css" href="css/starwarsintro.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/global.js" ></script>
     <script src="js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css"/>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css"/>
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css"/> -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css"/> -->
   </head>
   <body>
     <div id="landing" class="section">
       <div class="svg-wrapper">
-        <a onclick="location.reload();" id="jump" href="#about">
+        <a id="jump" href="#about">
           <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
           <rect class="shape" height="60" width="320" />
-          <div class="text">Devin Blankenship</div>
           </svg>
+          <div class="text">Devin Blankenship</div>
         </a>
         <div class="skills">
           <p>HTML - CSS - Javascript - Github - React - PHP</p>
@@ -32,16 +31,24 @@
       </div>
     </div>
 
+    <div id="navbar" class="menu">
+      <div>
+        <a onclick="location.reload();" id="jump" href="#about"><button class="nav-btn" href="#about"><h2>About me</h2></button></a>
+        <a id="jump" href="#portfolio"><button class="nav-btn" href="#portfolio"><h2>Portfolio</h2></button></a>
+        <a id="jump" href="#contact"><button class="nav-btn" href="#contact"><h2>Contact</h2></button></a>
+      </div>
+   </div>
+
     <div id="about" class="section">
-      <div id="port-wrapper">
-         <div class="text-2 about-me-menu">
+      <!-- <div id="port-wrapper">
+         <div id="navbar" class="text-2 about-me-menu">
             <div>
               <a onclick="location.reload();" id="jump" href="#about"><button class="nav-btn" href="#about"><h2>About me</h2></button></a>
               <a id="jump" href="#portfolio"><button class="nav-btn" href="#portfolio"><h2>Portfolio</h2></button></a>
               <a id="jump" href="#contact"><button class="nav-btn" href="#contact"><h2>Contact</h2></button></a>
             </div>
          </div>
-      </div>
+      </div> -->
 
 
 
@@ -103,7 +110,7 @@
     </div>
 
     <div id="portfolio" class="section"><!-- start portfolio -->
-      <div id="port-wrapper">
+      <!-- <div id="port-wrapper">
         <div class="text-2">
 
           <a onclick="location.reload();" id="jump" href="#about"><button class="nav-btn" href="#about"><h2>About me</h2></button></a>
@@ -111,10 +118,11 @@
           <a id="jump" href="#contact"><button class="nav-btn" href="#contact"><h2>Contact</h2></button></a>
 
         </div>
-      </div>
+      </div> -->
 
-      <H2 class="portfolio_titles">CURRENT PROJECTS</H2>
-      <div id="text-changer-2" class="container">
+      <!-- <H2 class="portfolio_titles">CURRENT PROJECTS</H2> -->
+      <div id="current-projects" class="container">
+        <H2 class="portfolio_titles">CURRENT PROJECTS</H2>
         <section class="main-portfolio">
           <div class="row"><!---start row-->
 
@@ -155,7 +163,7 @@
             <div class="col-md-4 col-12 word-desc"><!--start element 2-->
               <div  class="thumbnail shadow up-hover image-link">
                 <a class="" href="https://reel-collaboration.herokuapp.com//" target="_blank">
-                  <img src="img/reel-collaboration-profile-current.PNG"/>
+                  <img src="img/reel-collaboration-profile-current.png"/>
                 </a>
               </div>
               <div class="svg-wrapper">
@@ -174,8 +182,9 @@
       </div>
 
 
-      <H2 class="portfolio_titles">BOOTCAMP PROJECTS</H2>
-      <div id="text-changer-2" class="container">
+      <!-- <H2 class="portfolio_titles">BOOTCAMP PROJECTS</H2> -->
+      <div id="bootcamp-projects" class="container">
+        <H2 class="portfolio_titles">BOOTCAMP PROJECTS</H2>
         <section class="main-portfolio">
           <div class="row"><!---start row-->
 
@@ -229,8 +238,9 @@
       </div>
 
 
-      <H2 class="portfolio_titles">WORDPRESS WEBSITES</H2>
-      <div id="text-changer-2" class="container">
+      <!-- <H2 class="portfolio_titles">WORDPRESS WEBSITES</H2> -->
+      <div id="wordpress-projects" class="container">
+        <H2 class="portfolio_titles">WORDPRESS WEBSITES</H2>
         <section class="main-portfolio">
           <div class="row"><!---start row-->
 
@@ -261,14 +271,14 @@
     </div>
 
     <div id="contact" class="section">
-      <div id="port-wrapper">
+      <!-- <div id="port-wrapper">
         <div class="text-2">
 
           <a onclick="location.reload();" id="jump" href="#about"><button class="nav-btn" href="#about"><h2>About me</h2></button></a>
           <a id="jump" href="#portfolio"><button class="nav-btn" href="#portfolio"><h2>Portfolio</h2></button></a>
           <a id="jump" href="#contact"><button class="nav-btn" href="#contact"><h2>Contact</h2></button></a>
         </div>
-      </div>
+      </div> -->
 
       <div class="container">
         <div class="wrapper animated bounceInLeft">
