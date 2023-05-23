@@ -172,7 +172,7 @@ text-align: center;
 padding-top: 15px;
 color: white;
 }
-.work-link:hover{
+.work-link:hover, a:hover{
 color: #EBD71C;
 }
 .image-link:hover{
@@ -196,7 +196,12 @@ color: #EBD71C;
 iframe{
   display: flex;
 }
-
+svg {
+  margin-right: 10px;
+}
+a:hover {
+  color: #92bde7;
+}
 
 .col-md-4{
   width: 30%;
